@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <script src='https://d3js.org/d3.v7.min.js'></script>
+    <title>Musicals and the Economy</title>
+<link rel='stylesheet' href='style.css'>
+<link rel="icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/dollar-banking-red/512/music_camera_video_arrow_play_sound_stop_dollar_money_finance-512.png">
+</head>
+<body>
+    <div id="vertical-flex-container">
+        <div id='title'>
+            <h1>Musicals and</h1><h1 id="red">the Economy</h1>
+        </div>
+        <div id='title-subtext'>
+            <p>Estaremos enfocándonos en Musicales de Broadway. Se plantea que los musicales más populares se hacen cada vez más costosos, mientras que la inflación no necesariamente aumenta al mismo ritmo. Por lo tanto, disfrutar de musicales en Broadway se hace cada vez más un lujo de la clase alta mientras que personas de menores recursos no pueden acceder a esta experiencia cultural.</p>
+        </div>
+        <div id='yearly-avg-barplot-container'></div>
+        <div>
+            <h1>Top 25 Musicales</h1>
+            <p>El tamaño del círculo está definido por la suma de dinero obtenido para cada show en los años 1990-2020 </p>
+        </div>
+        <div id='bubble-chart-container'>
+            <svg id=bubble-chart></svg>
+        </div>
+    </div>
+    <script src='musicales.js'></script>
+</body>
+</html>

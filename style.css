@@ -1,0 +1,212 @@
+@font-face { font-family: Musicals; src: url('musicals.ttf'); } 
+
+.vertical-flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid .tick line {
+    stroke: #9FAAAE;
+    stroke-dasharray: 1em;
+}
+body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    overflow-x: hidden;
+    background-color: black;
+    background-image: url("background-image2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    text-align: center; 
+    align-items: center;
+    align-content: center;
+    justify-content: center; /* This one is important for text inside flexbox */
+    padding: 5%;
+}
+
+h1 { 
+    color: #FFEE93;
+    font-family: Musicals; 
+    font-size: 100px;
+    font-weight: normal;
+    line-height: 100px;
+    margin: 50px 10px 10px 10px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0 black;
+    text-align: center; 
+}
+
+h1#red {
+    color: #ADF7B6;
+    margin-left: 5px;
+}
+
+h2 { 
+    font-size: 30px;
+    letter-spacing: -1px;
+    color: #FFF3C8;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 #000;
+    margin: 10px 0 24px;
+    text-align: center;
+    line-height: 50px;
+}
+
+p { 
+    color: #FFF3C8;
+    font-family: 'Orienta', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+    margin-bottom: 50px;
+    text-align: center; 
+}
+
+a { 
+    color: #FFF3C8;
+    text-decoration: none;
+    text-align: right;
+    padding: 15px;
+    font-size: 20px;
+}
+
+a:hover { 
+    color: #da9650;
+    text-decoration: blink;
+}
+
+#eje-y-label {
+    fill: #FCF5C7;
+    font-size: 20px;
+    text-anchor: middle;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+}
+
+#eje-y-label-2 {
+    fill: #ADF7B6;
+    font-size: 20px;
+    text-anchor: middle;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+}
+
+#eje-numeros {
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+}
+
+#eje {
+    color:#FFEE93;
+    font-size: 20px;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+}
+
+#eje-y {
+    color: #FCF5C7;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+    font-size: 20px;
+}
+
+#eje-y-2 {
+    color: #ADF7B6;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+    font-size: 20px;
+}
+
+.tooltip  {
+    position: absolute;
+    background-color: #D11821;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#tooltip-p-ano {
+    background: #150F0A;
+    color: #FFF3C8;
+    border-radius: 5px;
+    margin: unset;
+    text-shadow: unset;
+}
+
+#tooltip-p {
+    color: black;
+    background: unset;
+    margin: unset;
+    text-shadow: unset;
+}
+
+#bubble-text {
+    font-size: 20px;
+    color: red;
+}
+
+#tooltip-bubble {
+    font-size: 20px;
+    color: #FFF3C8;
+    margin: unset;
+}
+
+#bubble-title {
+    fill: #FFF3C8;
+    font-family: 'Righteous', cursive; 
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#bubble-plot {
+    fill: white;
+    width: 50px;
+    font-family: 'Righteous', cursive; 
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0px 0 0px;
+}
+
+#back-button {
+    fill: white;
+    float: right;
+}
+
+#text-back-button {
+    fill: black;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    float: right;
+}
