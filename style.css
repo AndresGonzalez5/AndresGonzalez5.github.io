@@ -10,8 +10,6 @@
     stroke-dasharray: 1em;
 }
 body {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
     overflow-x: hidden;
     background-color: black;
     background-image: url("background-image2.jpg");

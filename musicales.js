@@ -213,8 +213,8 @@ function mouseover(d, data, jointlist) {
   const diferencia = (workingObj.values[0].grpValue - workingObj.values[1].grpValue) / ((workingObj.values[0].grpValue + workingObj.values[1].grpValue)/2) * 100
 
   d3.selectAll(".tooltip")
-    .style("left", d.layerX + "px")
-    .style("top", (d.layerY-margin.top+25)+ "px")
+    .style("left", d.pageX + "px")
+    .style("top", (d.pageY-margin.top+25)+ "px")
     .style("opacity", 1)
     .append("p")
     .attr("id", "tooltip-p-ano")
@@ -466,8 +466,8 @@ function mouseOverBubbles(d, i, dataShows) {
     dataShows.forEach( s => {
       if (s.grossTotal === i.value) {
         d3.selectAll(".tooltip")
-          .style("left", d.layerX + "px")
-          .style("top", (d.layerY-margin.top+25)+ "px")
+          .style("left", d.pageX + "px")
+          .style("top", (d.pageY-margin.top+25)+ "px")
           .style("opacity", 1)
           .append("p")
           .attr("id", "tooltip-bubble")
