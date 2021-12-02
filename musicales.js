@@ -1,6 +1,6 @@
 // Se definen los parámetros de dimensiones
 const WIDTH = document.getElementById('vertical-flex-container').clientWidth,
-HEIGHT = 500;
+HEIGHT = 700;
 const margin = { top: 50, bottom: 50, left: 50, right: 50 };
 const width = WIDTH - margin.left - margin.right,
 height = HEIGHT - margin.top - margin.bottom;
@@ -77,6 +77,7 @@ initialLoad().then(({musicals, wages, plot}) => {
     .scale(x0)
     // .tickSize(0)
     .tickValues(jointListTicketsWages.map(d=>d.year));
+    
   var yAxis = d3.axisLeft()
     .scale(y);
 
@@ -664,7 +665,6 @@ function clickBubble(d, i, dataShows, dByShow, wagesData, plot) {
                 .attr("dy", ".75em")
                 .text("Sinopsis");
 
-              console.log(showPlot.synopsis.length)
               svgBubbleChart
                 .append("g")
                 .append("text")
@@ -683,7 +683,7 @@ function clickBubble(d, i, dataShows, dByShow, wagesData, plot) {
               .attr("id", "back-button")
               .append("rect")
               .attr("width", "20px")
-              .attr("x", (width+margin.left-20)+"px")
+              .attr("x", (width+margin.left-25)+"px")
               .attr("y", (height+margin.top+23)+ "px")
               .attr("rx", "5px")
               .attr("height", "20px")
@@ -693,7 +693,7 @@ function clickBubble(d, i, dataShows, dByShow, wagesData, plot) {
           d3.select("#back-button")
             .append("text")
             .attr("id", "text-back-button")
-            .attr("transform", `translate(${width+margin.left-10}, ${height+margin.top+margin.bottom-10})`)
+            .attr("transform", `translate(${width+margin.left-15}, ${height+margin.top+margin.bottom-10})`)
             .text("Volver")
             .on("click", function() {clickBack(i);});
 
